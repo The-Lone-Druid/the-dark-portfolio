@@ -1,3 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 @tailwind base;
 @tailwind components;
+
+// Tailwind Link styles
+.nav-link {
+  @apply text-opacity-50 py-2 text-white transition-all hover:text-opacity-100 hover:font-bold hover:text-[18px];
+}
+.nav-link-icon {
+  @apply text-opacity-50 text-white transition-all hover:text-opacity-100 hover:font-bold;
+}
+
+// Tailwind Container styles
+.container {
+  @apply max-w-[1200px] mx-auto px-5;
+}
+
+// Taildinw Button Styles
+.btn.primary-btn {
+  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-blue-700 to-red-700 hover:from-blue-500 hover:to-red-500 px-[45px] py-[10px] rounded-full font-medium text-[18px]
+}
+
+.btn.primary-btn.btn-sm {
+  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-blue-700 to-red-700 hover:from-blue-500 hover:to-red-500 px-[30px] py-[10px] rounded-full font-medium text-[14px]
+}
+
 @tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #151527, #161020)
+}
