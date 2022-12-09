@@ -6,7 +6,7 @@ type Props = {};
 
 const PublicLayout = (props: Props) => {
   return (
-    <div className="h-[100vh] overflow-y-auto bg-gradient">
+    <div className="h-[100vh] overflow-y-auto bg-gradient-custom">
       {/* header */}
       <Header />
       {/* body */}

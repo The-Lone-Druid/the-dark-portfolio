@@ -13,16 +13,21 @@
 
 // Tailwind Container styles
 .container {
-  @apply max-w-[1200px] mx-auto px-5;
+  @apply max-w-[1366px] mx-auto px-5;
 }
 
 // Taildinw Button Styles
 .btn.primary-btn {
-  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-blue-700 to-red-700 hover:from-blue-500 hover:to-red-500 px-[45px] py-[10px] rounded-full font-medium text-[18px]
+  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-purple-500 to-blue-600 hover:from-blue-500 hover:to-red-500 px-[45px] py-[10px] rounded-full font-medium text-[18px]
 }
 
 .btn.primary-btn.btn-sm {
-  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-blue-700 to-red-700 hover:from-blue-500 hover:to-red-500 px-[30px] py-[10px] rounded-full font-medium text-[14px]
+  @apply hover:scale-[105%] transition-all shadow-lg bg-gradient-to-tr from-purple-500 to-blue-600 hover:from-blue-500 hover:to-red-500 px-[30px] py-[10px] rounded-full font-medium text-[14px]
+}
+
+// Taildinw Gradient Text
+.text-gradient-to-r {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-600
 }
 
 @tailwind utilities;
@@ -35,6 +40,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.bg-gradient {
+.bg-gradient-custom {
   background: linear-gradient(90deg, #151527, #161020)
 }
