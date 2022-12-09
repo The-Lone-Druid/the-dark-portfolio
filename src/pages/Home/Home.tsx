@@ -7,12 +7,14 @@ import { Page } from "../../layouts/default-exports";
 type Props = {};
 
 const Home = (props: Props) => {
-  const [skills, setSkills] = React.useState<[] | null | any>(null);
+  const [techStacks, setTechStacks] = React.useState<[] | null | any>(null);
   const [services, setServices] = React.useState<[] | null | any>(null);
+  const [skills, setSkills] = React.useState<[] | null | any>(null);
 
   React.useEffect(() => {
-    setSkills(data?.techStack);
+    setTechStacks(data?.techStack);
     setServices(data?.services);
+    setSkills(data?.skills);
   }, []);
 
   return (
@@ -97,8 +99,8 @@ const Home = (props: Props) => {
                   <li>Deployed the website to Netlify</li>
                 </ul>
                 <div className="flex items-center gap-2 mt-4 flex-wrap">
-                  {skills
-                    ? skills.map((skill: any, index: number) => (
+                  {techStacks
+                    ? techStacks.map((skill: any, index: number) => (
                         <span
                           key={index}
                           className="bg-white bg-opacity-10 text-white px-4 rounded-[5px] py-2 text-[14px]"
@@ -120,7 +122,7 @@ const Home = (props: Props) => {
             </div>
           </div>
         </section>
-        {/* skills section */}
+        {/* services section */}
         <section className="mt-[100px]">
           <Title title="My Services" />
           <div className="grid grid-cols-3 gap-[35px] py-4 mt-4">
@@ -139,6 +141,26 @@ const Home = (props: Props) => {
                       {service.serviceHeading}
                     </h4>
                     <p className="mt-2">{service.serviceText}</p>
+                  </div>
+                ))
+              : null}
+          </div>
+        </section>
+        {/* Skills section */}
+        <section className="mt-[100px]">
+          <Title title="My Skills" />
+          <div className="grid grid-cols-8 gap-[35px] py-4 mt-4">
+            {skills
+              ? skills.map((skill: any, index: number) => (
+                  <div
+                    key={index}
+                    className="rounded-[20px] bg-white bg-opacity-5 p-6 flex flex-col items-center justify-between text-center bg-white bg-opacity-5"
+                  >
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="h-[80px] w-[80px]"
+                    />
                   </div>
                 ))
               : null}
