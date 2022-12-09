@@ -154,7 +154,7 @@ const Home = (props: Props) => {
               ? skills.map((skill: any, index: number) => (
                   <div
                     key={index}
-                    className="rounded-[20px] bg-white bg-opacity-5 p-6 flex flex-col items-center justify-between text-center bg-white bg-opacity-5"
+                    className="rounded-[20px] bg-white bg-opacity-5 p-6 flex flex-col items-center justify-between text-center"
                   >
                     <img
                       src={skill.icon}
