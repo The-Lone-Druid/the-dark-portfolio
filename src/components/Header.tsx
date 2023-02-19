@@ -13,8 +13,6 @@ import React from "react";
 
 type Props = {};
 
-export type ThemeMode = "light" | "dark";
-
 const Header = (props: Props) => {
   return (
     <nav className="h-[80px]">
@@ -80,44 +78,20 @@ const Header = (props: Props) => {
               </ul>
               <ul className="flex items-center gap-[5px]">
                 <li>
-                  <Link
-                    className="text-gray-400 hover:text-gray-100 transition-all"
-                    href={""}
-                  >
-                    <IconButton size="large">
-                      <LinkedIn className="text-white" fontSize="medium" />
-                    </IconButton>
-                  </Link>
+                  <IconButton size="large">
+                    <LinkedIn className="text-white" fontSize="medium" />
+                  </IconButton>
                 </li>
                 <li>
-                  <Link
-                    className="text-gray-400 hover:text-gray-100 transition-all"
-                    href={""}
-                  >
-                    <IconButton size="large">
-                      <GitHub className="text-white" fontSize="medium" />
-                    </IconButton>
-                  </Link>
+                  <IconButton size="large">
+                    <GitHub className="text-white" fontSize="medium" />
+                  </IconButton>
                 </li>
                 <li>
-                  <Link
-                    className="text-gray-400 hover:text-gray-100 transition-all"
-                    href={""}
-                  >
-                    <IconButton size="large">
-                      <Instagram className="text-white" fontSize="medium" />
-                    </IconButton>
-                  </Link>
+                  <IconButton size="large">
+                    <Instagram className="text-white" fontSize="medium" />
+                  </IconButton>
                 </li>
-                {/* <li>
-                <Link
-                  className="text-gray-400 hover:text-gray-100 transition-all"
-                  href={""}
-                >
-                  {mode === "light" && <DarkMode />}
-                  {mode === "dark" && <LightMode />}
-                </Link>
-              </li> */}
               </ul>
             </div>
           </div>
