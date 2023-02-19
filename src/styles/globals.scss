@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$pf-dark-max: #24252c;
+$pf-dark-med: #32333f;
+$pf-dark-min: #2e2b4e;
+
+body {
+  background: $pf-dark-max;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: #ffffff2f;
+}
+
+@layer components {
+  .pf-container {
+    @apply w-full max-w-[1366px] px-[20px] mx-auto;
+  }
+}
