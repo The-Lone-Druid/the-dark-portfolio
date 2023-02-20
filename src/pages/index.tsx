@@ -8,11 +8,19 @@ import Skills from "@/components/Skills";
 import React from "react";
 import { Projects as ProjectsType } from "./api/projects";
 
-type Props = {
-  projects: ProjectsType[];
-};
+export default function Home() {
+  const [projects, setProjects] = React.useState<ProjectsType[]>([]);
 
-export default function Home({ projects }: Props) {
+  const fetchProjects = async () => {
+    const fetchProjects = await fetch(`api/projects`);
+    const projects = await fetchProjects.json();
+    setProjects(projects);
+  };
+
+  React.useEffect(() => {
+    fetchProjects();
+  });
+
   return (
     <>
       <Header />
@@ -24,16 +32,4 @@ export default function Home({ projects }: Props) {
       <Footer />
     </>
   );
-}
-
-export async function getServerSideProps(context: any) {
-  const apiUrl = context.req.headers["referer"];
-  const fetchProjects = await fetch(`${apiUrl}api/projects`);
-  const projects = await fetchProjects.json();
-
-  return {
-    props: {
-      projects: projects
-    }
-  };
 }
