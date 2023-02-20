@@ -5,7 +5,7 @@ type Props = {};
 
 const Services = (props: Props) => {
   return (
-    <div className="bg-pf-dark-med">
+    <div className="bg-pf-dark-med" id="services">
       <div className="pf-container py-[60px]">
         <div className="flex items-center">
           <Typography variant="h5" fontWeight="bold" gutterBottom>

@@ -1,17 +1,26 @@
+import { Projects } from "@/pages/api/projects";
 import { Typography } from "@mui/material";
 import React from "react";
+import Project from "./Project";
 
-type Props = {};
+type Props = {
+  projects: Projects[];
+};
 
-const Projects = (props: Props) => {
+const Projects = ({ projects }: Props) => {
   return (
-    <div className="bg-pf-dark-med">
+    <div className="bg-pf-dark-med" id="projects">
       <div className="pf-container py-[60px]">
         <div className="flex items-center">
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Projects
           </Typography>
           <div className="border flex-1 ml-4"></div>
+        </div>
+        <div className="flex flex-col sm:gap-10 gap-5 mt-10">
+          {projects.map((project) => (
+            <Project key={project.id} data={project} />
+          ))}
         </div>
       </div>
     </div>

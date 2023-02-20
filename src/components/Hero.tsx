@@ -8,8 +8,8 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="pf-container py-[60px]">
-      <div className="grid grid-cols-2 items-center">
+    <div className="pf-container py-[60px]" id="home">
+      <div className="flex sm:flex-row flex-col-reverse items-center">
         <div>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Hi, my name is
@@ -17,18 +17,22 @@ const Hero = (props: Props) => {
           <Typography variant="h3" fontWeight="bold" gutterBottom>
             Zahid Shaikh
           </Typography>
-          <Typography variant="h6" fontWeight="semibold" gutterBottom>
+          <Typography variant="body1" fontWeight="semibold" gutterBottom>
             I have built many industry grade projects from scratch and am armed
             with many technological skills useful for tech projects. Check out
             my projects below. :)
           </Typography>
-          <Typography variant="h6" fontWeight="bold" sx={{ marginTop: "20px" }}>
+          <Typography
+            variant="body1"
+            fontWeight="bold"
+            sx={{ marginTop: "20px" }}
+          >
             <Link href={"mailto:reachtozahid@gmail.com"}>
               reachtozahid@gmail.com
             </Link>
           </Typography>
-          <div className="mt-8 rounded-[15px] bg-pf-dark-primary flex items-center w-fit">
-            <div className="py-3 px-2 text-center min-w-[180px] border-r">
+          <div className="mt-8 rounded-[15px] bg-gradient-to-br from-pf-dark-primary to-pf-dark-min flex md:flex-row flex-col items-center md:w-fit shadow-lg">
+            <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
                 12
               </Typography>
@@ -36,7 +40,7 @@ const Hero = (props: Props) => {
                 VERIFIED SKILLS
               </Typography>
             </div>
-            <div className="py-3 px-2 text-center min-w-[180px] border-r">
+            <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
                 9
               </Typography>
@@ -44,7 +48,7 @@ const Hero = (props: Props) => {
                 PROFESSIONAL PROJECTS
               </Typography>
             </div>
-            <div className="py-3 px-2 text-center min-w-[180px]">
+            <div className="py-3 px-2 text-center md:min-w-[180px]">
               <Typography variant="h3" fontWeight="bold">
                 24
               </Typography>
@@ -54,13 +58,13 @@ const Hero = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end">
-          {/* <Image
+        <div className="flex items-center justify-end mb-5 md:mb-0">
+          <Image
             src={Illustration}
-            width={800}
+            width={360}
             style={{ objectFit: "cover" }}
             alt={""}
-          /> */}
+          />
         </div>
       </div>
     </div>

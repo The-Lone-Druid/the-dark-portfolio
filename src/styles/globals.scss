@@ -1,3 +1,10 @@
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+@import "@fontsource/poppins/800.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +18,11 @@ body {
   color: white;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -22,6 +34,15 @@ body {
 
 @layer components {
   .pf-container {
-    @apply w-full max-w-[1366px] px-[20px] mx-auto;
+    @apply w-full max-w-[1366px] sm:px-[20px] px-[15px] mx-auto;
+  }
+
+  .pf-sidebar {
+    transform: translate3d(-120%, 0, 0);
+    transition: 0.3s ease-out;
+
+    &.pf-sidebar-visible {
+      transform: translate3d(0, 0, 0);
+    }
   }
 }

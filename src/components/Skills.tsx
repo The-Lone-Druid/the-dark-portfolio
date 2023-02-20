@@ -6,7 +6,7 @@ type Props = {};
 const Skills = (props: Props) => {
   return (
     <div>
-      <div className="pf-container py-[60px]">
+      <div className="pf-container py-[60px]" id="skills">
         <div className="flex items-center">
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Skills

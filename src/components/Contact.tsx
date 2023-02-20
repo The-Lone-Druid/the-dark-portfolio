@@ -6,7 +6,7 @@ type Props = {};
 const Contact = (props: Props) => {
   return (
     <div>
-      <div className="pf-container py-[60px]">
+      <div className="pf-container py-[60px]" id="contact">
         <div className="flex items-center">
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact
