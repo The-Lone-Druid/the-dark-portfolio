@@ -7,6 +7,7 @@ export type Projects = {
   project_name: string;
   project_date: string;
   project_description: string;
+  project_link: string;
   project_tasks: {
     id: number;
     task: string;

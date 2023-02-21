@@ -1,6 +1,11 @@
 import { ProjectImage } from "@/assets/default.exports";
 import { Projects } from "@/pages/api/projects";
-import { ExpandLess, ExpandMore } from "@mui/icons-material";
+import {
+  ExpandLess,
+  ExpandMore,
+  Link,
+  VisibilityOutlined
+} from "@mui/icons-material";
 import { Button, Chip, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
@@ -17,8 +22,8 @@ const Project = ({ data }: Props) => {
   };
 
   return (
-    <div className="rounded-[15px] sm:p-10 p-5 bg-gradient-to-br from-pf-dark-max to to-gray-900 shadow-lg flex lg:flex-row flex-col-reverse gap-4">
-      <div>
+    <div className="rounded-[15px] sm:p-10 p-5 bg-gradient-to-br from-pf-dark-max to to-gray-900 shadow-lg flex lg:flex-row flex-col-reverse justify-between gap-4">
+      <div className="lg:max-w-[660px]">
         <Typography variant="h3" fontWeight={"bold"} gutterBottom>
           {data?.project_name}
         </Typography>
@@ -36,14 +41,25 @@ const Project = ({ data }: Props) => {
             <li key={task.id}>{task.task}</li>
           ))}
         </ul>
-        <div className="pb-4">
+        <div className="pb-4 flex gap-3 flex-wrap">
           <Button
             color="inherit"
+            startIcon={<VisibilityOutlined />}
             endIcon={expand ? <ExpandLess /> : <ExpandMore />}
             onClick={handleExpandMore}
             variant={"outlined"}
           >
-            View more
+            {expand ? "less" : "more"}
+          </Button>
+          <Button
+            color="inherit"
+            startIcon={<Link />}
+            LinkComponent="a"
+            href={data?.project_link}
+            target="_blank"
+            variant={"outlined"}
+          >
+            Website
           </Button>
         </div>
         {expand && (
@@ -77,7 +93,12 @@ const Project = ({ data }: Props) => {
         )}
       </div>
       <div>
-        <Image src={ProjectImage} alt={data?.project_name} width={360} />
+        <Image
+          src={ProjectImage}
+          blurDataURL={"/assets/images/project.png"}
+          alt={data?.project_name}
+          width={360}
+        />
       </div>
     </div>
   );

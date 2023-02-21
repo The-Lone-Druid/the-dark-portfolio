@@ -9,7 +9,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className="pf-container py-[60px]" id="home">
-      <div className="flex sm:flex-row flex-col-reverse items-center">
+      <div className="flex lg:flex-row flex-col-reverse justify-between items-center">
         <div>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Hi, my name is
@@ -17,7 +17,12 @@ const Hero = (props: Props) => {
           <Typography variant="h3" fontWeight="bold" gutterBottom>
             Zahid Shaikh
           </Typography>
-          <Typography variant="body1" fontWeight="semibold" gutterBottom>
+          <Typography
+            variant="body1"
+            fontWeight="semibold"
+            className="max-w-[460px]"
+            gutterBottom
+          >
             I have built many industry grade projects from scratch and am armed
             with many technological skills useful for tech projects. Check out
             my projects below. :)
@@ -58,10 +63,10 @@ const Hero = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-end mb-5 md:mb-0">
+        <div className="flex items-center justify-end mb-5 lg:mb-0">
           <Image
             src={Illustration}
-            width={360}
+            width={380}
             style={{ objectFit: "cover" }}
             alt={""}
           />
