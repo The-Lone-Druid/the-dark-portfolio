@@ -19,7 +19,7 @@ export default function Home() {
 
   React.useEffect(() => {
     fetchProjects();
-  });
+  }, []);
 
   return (
     <>
