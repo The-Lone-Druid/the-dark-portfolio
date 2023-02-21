@@ -1,12 +1,15 @@
 import { Illustration } from "@/assets/default.exports";
+import { Hero } from "@/pages/api/hero";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  data: Hero | undefined;
+};
 
-const Hero = (props: Props) => {
+const Hero = ({ data }: Props) => {
   return (
     <div className="pf-container py-[60px]" id="home">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center">
@@ -39,7 +42,7 @@ const Hero = (props: Props) => {
           <div className="mt-8 rounded-[15px] bg-gradient-to-br from-pf-dark-primary to-pf-dark-min flex md:flex-row flex-col items-center md:w-fit shadow-lg">
             <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
-                12
+                {data && data.verified_skills}
               </Typography>
               <Typography variant="caption" fontWeight="semibold">
                 VERIFIED SKILLS
@@ -47,7 +50,7 @@ const Hero = (props: Props) => {
             </div>
             <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
-                9
+                {data && data.professional_projects}
               </Typography>
               <Typography variant="caption" fontWeight="semibold">
                 PROFESSIONAL PROJECTS
@@ -55,7 +58,7 @@ const Hero = (props: Props) => {
             </div>
             <div className="py-3 px-2 text-center md:min-w-[180px]">
               <Typography variant="h3" fontWeight="bold">
-                24
+                {data && data.personal_projects}
               </Typography>
               <Typography variant="caption" fontWeight="semibold">
                 PERSONAL PROJECTS

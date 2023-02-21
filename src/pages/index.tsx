@@ -6,25 +6,34 @@ import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import React from "react";
+import { Hero as HeroType } from "./api/hero";
 import { Projects as ProjectsType } from "./api/projects";
 
 export default function Home() {
   const [projects, setProjects] = React.useState<ProjectsType[]>([]);
+  const [userData, setUserData] = React.useState<HeroType>();
 
-  const fetchProjects = async () => {
+  const fetchHeroDataAsync = async () => {
+    const fetchHeroData = await fetch(`api/hero`);
+    const heroData = await fetchHeroData.json();
+    setUserData(heroData);
+  };
+
+  const fetchProjectsAsync = async () => {
     const fetchProjects = await fetch(`api/projects`);
     const projects = await fetchProjects.json();
     setProjects(projects);
   };
 
   React.useEffect(() => {
-    fetchProjects();
+    fetchHeroDataAsync();
+    fetchProjectsAsync();
   }, []);
 
   return (
     <>
       <Header />
-      <Hero />
+      <Hero data={userData} />
       <Projects projects={projects} />
       <Skills />
       <Services />
