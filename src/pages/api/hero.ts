@@ -13,9 +13,9 @@ export default function handler(
   res: NextApiResponse<Hero>
 ) {
   const payload = {
-    verified_skills: 12,
+    verified_skills: data.skills.length,
     professional_projects: data.projects.length,
-    personal_projects: 24
+    personal_projects: 16
   };
 
   res.status(200).json(payload);
