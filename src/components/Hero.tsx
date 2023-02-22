@@ -39,7 +39,7 @@ const Hero = ({ data }: Props) => {
               reachtozahid@gmail.com
             </Link>
           </Typography>
-          <div className="mt-8 rounded-[15px] bg-gradient-to-br from-pf-dark-primary to-pf-dark-min flex md:flex-row flex-col items-center md:w-fit shadow-lg">
+          <div className="mt-8 rounded-[15px] bg-gradient-to-br from-purple-500 to-purple-900 flex md:flex-row flex-col items-center md:w-fit shadow-lg">
             <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
                 {data && data.verified_skills}

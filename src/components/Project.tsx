@@ -24,7 +24,12 @@ const Project = ({ data }: Props) => {
   return (
     <div className="rounded-[15px] sm:p-10 p-5 bg-gradient-to-br from-pf-dark-max to to-gray-900 shadow-lg flex lg:flex-row flex-col-reverse justify-between gap-4">
       <div className="lg:max-w-[660px]">
-        <Typography variant="h3" fontWeight={"bold"} gutterBottom>
+        <Typography
+          variant="h4"
+          fontWeight={"bold"}
+          className="text-transparent bg-clip-text bg-gradient-to-br from-purple-300 to-purple-700"
+          gutterBottom
+        >
           {data?.project_name}
         </Typography>
         <Typography variant="h6" gutterBottom>
@@ -68,7 +73,7 @@ const Project = ({ data }: Props) => {
             <div className="flex mt-2 mb-4 gap-2 flex-wrap">
               {data?.skills_utilized.map((skill: any) => (
                 <span
-                  className="px-3 py-2 rounded-lg bg-white bg-opacity-5 text-sm"
+                  className="px-3 py-2 rounded-lg bg-gradient-to-br from-purple-400 to-purple-800 text-sm"
                   key={skill.id}
                 >
                   {skill.name}
@@ -79,7 +84,7 @@ const Project = ({ data }: Props) => {
             <div className="flex mt-2 gap-2 flex-wrap">
               {data?.organization.map((organization: any) => (
                 <span
-                  className="px-3 py-2 rounded-lg bg-white bg-opacity-5 text-sm cursor-pointer"
+                  className="px-3 py-2 rounded-lg bg-gradient-to-br from-purple-400 to-purple-800 text-sm cursor-pointer"
                   key={organization.id}
                   onClick={() => {
                     window.open(organization?.website);

@@ -101,19 +101,34 @@ const Header = (props: Props) => {
                     </li>
                   ))}
               </ul>
-              <ul className="flex items-center gap-[5px]">
+              <ul className="flex items-center justify-center gap-[5px]">
                 <li>
-                  <IconButton size="large">
+                  <IconButton
+                    size="large"
+                    LinkComponent={"a"}
+                    href="https://www.linkedin.com/in/zahid-shaikh-7a4843178/"
+                    target={"_blank"}
+                  >
                     <LinkedIn className="text-white" fontSize="medium" />
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton size="large">
+                  <IconButton
+                    size="large"
+                    LinkComponent={"a"}
+                    href="https://github.com/The-Lone-Druid"
+                    target={"_blank"}
+                  >
                     <GitHub className="text-white" fontSize="medium" />
                   </IconButton>
                 </li>
                 <li>
-                  <IconButton size="large">
+                  <IconButton
+                    size="large"
+                    LinkComponent={"a"}
+                    href="https://www.instagram.com/the_lone_druid/"
+                    target={"_blank"}
+                  >
                     <Instagram className="text-white" fontSize="medium" />
                   </IconButton>
                 </li>
@@ -154,17 +169,32 @@ const Header = (props: Props) => {
         </List>
         <ul className="flex items-center justify-center gap-[5px]">
           <li>
-            <IconButton size="large">
+            <IconButton
+              size="large"
+              LinkComponent={"a"}
+              href="https://www.linkedin.com/in/zahid-shaikh-7a4843178/"
+              target={"_blank"}
+            >
               <LinkedIn className="text-white" fontSize="medium" />
             </IconButton>
           </li>
           <li>
-            <IconButton size="large">
+            <IconButton
+              size="large"
+              LinkComponent={"a"}
+              href="https://github.com/The-Lone-Druid"
+              target={"_blank"}
+            >
               <GitHub className="text-white" fontSize="medium" />
             </IconButton>
           </li>
           <li>
-            <IconButton size="large">
+            <IconButton
+              size="large"
+              LinkComponent={"a"}
+              href="https://www.instagram.com/the_lone_druid/"
+              target={"_blank"}
+            >
               <Instagram className="text-white" fontSize="medium" />
             </IconButton>
           </li>
