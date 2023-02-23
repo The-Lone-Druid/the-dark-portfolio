@@ -11,7 +11,7 @@ type Props = {
 
 const Hero = ({ data }: Props) => {
   return (
-    <div className="pf-container py-[60px]" id="home">
+    <div className="pf-container py-[60px] pb-[120px]" id="home">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center">
         <div>
           <Typography variant="h5" fontWeight="bold" gutterBottom>

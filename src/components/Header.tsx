@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 type Props = {};
@@ -23,6 +24,24 @@ type Menu = {
 const Header = (props: Props) => {
   const [menu, setMenu] = React.useState<Menu[]>();
   const [isMenuVisible, setIsMenuVisible] = React.useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
+
+  const handleSectionNavigation = (item: Menu) => {
+    const location: any = window.location;
+    const url = new URL(location);
+    url.searchParams.set("focus", item.link);
+    window.history.pushState(null, "", url.toString());
+    const focus: any = url.searchParams.get("focus");
+
+    let section: any = document.querySelector(focus ? focus : item.link);
+    window.scrollTo({
+      left: 0,
+      top: section.offsetTop - 80
+    });
+  };
 
   React.useEffect(() => {
     setMenu([
@@ -53,18 +72,6 @@ const Header = (props: Props) => {
       }
     ]);
   }, []);
-
-  const handleMenuToggle = () => {
-    setIsMenuVisible(!isMenuVisible);
-  };
-
-  const handleSectionNavigation = (item: Menu) => {
-    let section: any = document.querySelector(item.link);
-    window.scrollTo({
-      left: 0,
-      top: section.offsetTop - 80
-    });
-  };
 
   return (
     <nav className="h-[80px]">
