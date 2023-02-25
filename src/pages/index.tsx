@@ -44,13 +44,17 @@ export default function Home() {
     setServices(services);
   };
 
-  React.useEffect(() => {
+  const fetchAllData = async () => {
     setLoading(true);
-    fetchHeroDataAsync();
-    fetchProjectsAsync();
-    fetchSkillsAsync();
-    fetchServicesAsync();
+    await fetchHeroDataAsync();
+    await fetchProjectsAsync();
+    await fetchSkillsAsync();
+    await fetchServicesAsync();
     setLoading(false);
+  };
+
+  React.useEffect(() => {
+    fetchAllData();
   }, []);
 
   return (
