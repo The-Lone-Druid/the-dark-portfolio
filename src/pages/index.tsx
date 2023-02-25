@@ -2,6 +2,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Loader from "@/components/Loader";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
@@ -17,6 +18,7 @@ export default function Home() {
   const [projects, setProjects] = React.useState<ProjectsType[]>([]);
   const [skills, setSkills] = React.useState<SkillsType[]>([]);
   const [services, setServices] = React.useState<ServiceType[]>([]);
+  const [loading, setLoading] = React.useState(false);
 
   const fetchHeroDataAsync = async () => {
     const fetchHeroData = await fetch(`api/hero`);
@@ -43,20 +45,16 @@ export default function Home() {
   };
 
   React.useEffect(() => {
+    setLoading(true);
     fetchHeroDataAsync();
     fetchProjectsAsync();
     fetchSkillsAsync();
     fetchServicesAsync();
+    setLoading(false);
   }, []);
 
   return (
     <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        />
-      </Head>
       <Header />
       <Hero data={userData} />
       <Projects projects={projects} />
@@ -64,6 +62,7 @@ export default function Home() {
       <Services services={services} />
       <Contact />
       <Footer />
+      {loading && <Loader />}
     </>
   );
 }

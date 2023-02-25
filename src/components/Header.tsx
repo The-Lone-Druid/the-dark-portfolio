@@ -210,7 +210,7 @@ const Header = (props: Props) => {
       {isMenuVisible && (
         <div
           onClick={handleMenuToggle}
-          className={`pf-sidebar-overlay fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50 backdrop-blur-sm`}
+          className={`pf-sidebar-overlay fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50`}
         ></div>
       )}
     </nav>
