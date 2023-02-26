@@ -22,7 +22,10 @@ const Project = ({ data }: Props) => {
   };
 
   return (
-    <div className="rounded-[15px] sm:p-10 p-5 bg-gradient-to-br from-pf-dark-max to to-gray-900 shadow-lg flex lg:flex-row flex-col-reverse justify-between gap-4">
+    <div
+      className="rounded-[15px] sm:p-10 p-5 bg-gradient-to-br from-pf-dark-max to to-gray-900 shadow-lg flex lg:flex-row flex-col-reverse justify-between gap-4"
+      data-aos="fade-up"
+    >
       <div className="lg:max-w-[660px]">
         <Typography
           variant="h4"

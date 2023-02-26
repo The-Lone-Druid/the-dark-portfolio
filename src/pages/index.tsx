@@ -6,7 +6,8 @@ import Loader from "@/components/Loader";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
-import Head from "next/head";
+import { Rocket } from "@mui/icons-material";
+import { Fab } from "@mui/material";
 import React from "react";
 import { Hero as HeroType } from "./api/hero";
 import { Projects as ProjectsType } from "./api/projects";
@@ -18,7 +19,8 @@ export default function Home() {
   const [projects, setProjects] = React.useState<ProjectsType[]>([]);
   const [skills, setSkills] = React.useState<SkillsType[]>([]);
   const [services, setServices] = React.useState<ServiceType[]>([]);
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const scrollToTopRef = React.useRef<any>();
 
   const fetchHeroDataAsync = async () => {
     const fetchHeroData = await fetch(`api/hero`);
@@ -45,7 +47,6 @@ export default function Home() {
   };
 
   const fetchAllData = async () => {
-    setLoading(true);
     await fetchHeroDataAsync();
     await fetchProjectsAsync();
     await fetchSkillsAsync();
@@ -57,9 +58,23 @@ export default function Home() {
     fetchAllData();
   }, []);
 
+  React.useEffect(() => {
+    if (scrollToTopRef) {
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > scrollToTopRef.current.offsetTop) {
+          scrollToTopRef.current.style.visibility = "visible";
+        } else {
+          scrollToTopRef.current.style.visibility = "hidden";
+        }
+
+        console.log();
+      });
+    }
+  }, []);
+
   return (
     <>
-      <Header />
+      <Header data-aos="fade-down" />
       <Hero data={userData} />
       <Projects projects={projects} />
       <Skills skills={skills} />
@@ -67,6 +82,27 @@ export default function Home() {
       <Contact />
       <Footer />
       {loading && <Loader />}
+      <div
+        className="fixed bottom-[30px] right-[15px]"
+        ref={scrollToTopRef}
+        style={{ visibility: "hidden" }}
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            left: 0
+          });
+        }}
+      >
+        <Fab
+          size="medium"
+          color="primary"
+          variant="circular"
+          className="text-white"
+          aria-label="add"
+        >
+          <Rocket />
+        </Fab>
+      </div>
     </>
   );
 }

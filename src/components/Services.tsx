@@ -18,10 +18,12 @@ const Services = ({ services }: Props) => {
         </div>
         <div className="grid sm:gap-[35px] gap-4 mt-10 lg:grid-cols-3 sm:grid-cols-2">
           {services &&
-            services.map((service) => (
+            services.map((service, index) => (
               <div
                 key={service.id}
                 className="flex flex-col items-center justify-center text-center shadow-lg rounded-xl px-8 py-10 bg-gradient-to-br from-pf-dark-max to-gray-900"
+                data-aos="fade-up"
+                data-aos-delay={`${50 * index}`}
               >
                 <i
                   className={`${service.icon} text-transparent text-7xl bg-clip-text bg-gradient-to-br from-purple-400 to-purple-800`}

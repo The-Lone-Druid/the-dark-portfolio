@@ -14,10 +14,22 @@ const Hero = ({ data }: Props) => {
     <div className="pf-container py-[60px] pb-[120px]" id="home">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center">
         <div>
-          <Typography variant="h5" fontWeight="bold" gutterBottom>
+          <Typography
+            variant="h5"
+            fontWeight="bold"
+            gutterBottom
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
             Hi, my name is
           </Typography>
-          <Typography variant="h3" fontWeight="bold" gutterBottom>
+          <Typography
+            variant="h3"
+            fontWeight="bold"
+            gutterBottom
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             Zahid Shaikh
           </Typography>
           <Typography
@@ -25,6 +37,8 @@ const Hero = ({ data }: Props) => {
             fontWeight="semibold"
             className="max-w-[460px]"
             gutterBottom
+            data-aos="fade-up"
+            data-aos-delay="300"
           >
             I have built many industry grade projects from scratch and am armed
             with many technological skills useful for tech projects. Check out
@@ -34,12 +48,18 @@ const Hero = ({ data }: Props) => {
             variant="body1"
             fontWeight="bold"
             sx={{ marginTop: "20px" }}
+            data-aos="fade-up"
+            data-aos-delay="450"
           >
             <Link href={"mailto:reachtozahid@gmail.com"}>
               reachtozahid@gmail.com
             </Link>
           </Typography>
-          <div className="mt-8 rounded-[15px] bg-gradient-to-br from-purple-500 to-purple-900 flex md:flex-row flex-col items-center md:w-fit shadow-lg">
+          <div
+            className="mt-8 rounded-[15px] bg-gradient-to-br from-purple-500 to-purple-900 flex md:flex-row flex-col items-center md:w-fit shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="550"
+          >
             <div className="py-3 px-2 text-center md:min-w-[180px] md:border-r md:border-b-0 border-b w-full">
               <Typography variant="h3" fontWeight="bold">
                 {data && data.verified_skills}
