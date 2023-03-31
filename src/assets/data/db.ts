@@ -10,82 +10,82 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converting Design Systems into reusable CSS and Components",
+          task: "Converting Design Systems into reusable CSS and Components"
         },
         {
           id: 1,
-          task: "Making complex layouts",
+          task: "Making complex layouts"
         },
         {
           id: 2,
-          task: "Developing and maintaining the user interfaces",
+          task: "Developing and maintaining the user interfaces"
         },
         {
           id: 3,
-          task: "Worked on Optimization, Performance and UX Improvement.",
+          task: "Worked on Optimization, Performance and UX Improvement."
         },
         {
           id: 4,
-          task: "Making Responsive UI.",
+          task: "Making Responsive UI."
         },
         {
           id: 5,
-          task: "Integrating API's and RESTful Services.",
-        },
+          task: "Integrating API's and RESTful Services."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "SCSS",
+          name: "SCSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "React",
+          name: "React"
         },
         {
           id: 11,
-          name: "React Native",
+          name: "React Native"
         },
         {
           id: 10,
-          name: "Typescript",
+          name: "Typescript"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Tailwindcss",
+          name: "Tailwindcss"
         },
         {
           id: 9,
-          name: "Material UI",
-        },
+          name: "Material UI"
+        }
       ],
       organization: [
         {
           id: 0,
-          name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          name: "RightBrain Infotech",
+          website: "https://www.rightbraininfotech.in/"
+        }
+      ]
     },
     {
       id: 8,
@@ -97,78 +97,78 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converting Design Systems into reusable CSS and Components",
+          task: "Converting Design Systems into reusable CSS and Components"
         },
         {
           id: 1,
-          task: "Making complex layouts",
+          task: "Making complex layouts"
         },
         {
           id: 2,
-          task: "Developing and maintaining the user interfaces",
+          task: "Developing and maintaining the user interfaces"
         },
         {
           id: 3,
-          task: "Worked on Optimization, Performance and UX Improvement.",
+          task: "Worked on Optimization, Performance and UX Improvement."
         },
         {
           id: 4,
-          task: "Making Responsive UI.",
+          task: "Making Responsive UI."
         },
         {
           id: 5,
-          task: "Integrating API's and RESTful Services.",
-        },
+          task: "Integrating API's and RESTful Services."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "SCSS",
+          name: "SCSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "React",
+          name: "React"
         },
         {
           id: 10,
-          name: "Typescript",
+          name: "Typescript"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Tailwindcss",
+          name: "Tailwindcss"
         },
         {
           id: 9,
-          name: "Material UI",
-        },
+          name: "Material UI"
+        }
       ],
       organization: [
         {
           id: 0,
-          name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          name: "RightBrain Infotech",
+          website: "https://www.rightbraininfotech.in/"
+        }
+      ]
     },
     {
       id: 7,
@@ -180,78 +180,78 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converting Design Systems into reusable CSS and Components",
+          task: "Converting Design Systems into reusable CSS and Components"
         },
         {
           id: 1,
-          task: "Making complex layouts",
+          task: "Making complex layouts"
         },
         {
           id: 2,
-          task: "Developing and maintaining the user interfaces",
+          task: "Developing and maintaining the user interfaces"
         },
         {
           id: 3,
-          task: "Worked on Optimization, Performance and UX Improvement.",
+          task: "Worked on Optimization, Performance and UX Improvement."
         },
         {
           id: 4,
-          task: "Making Responsive UI.",
+          task: "Making Responsive UI."
         },
         {
           id: 5,
-          task: "Integrating API's and RESTful Services.",
-        },
+          task: "Integrating API's and RESTful Services."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "SCSS",
+          name: "SCSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "React",
+          name: "React"
         },
         {
           id: 10,
-          name: "Typescript",
+          name: "Typescript"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Tailwindcss",
+          name: "Tailwindcss"
         },
         {
           id: 9,
-          name: "Material UI",
-        },
+          name: "Material UI"
+        }
       ],
       organization: [
         {
           id: 0,
-          name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          name: "RightBrain Infotech",
+          website: "https://www.rightbraininfotech.in/"
+        }
+      ]
     },
     {
       id: 6,
@@ -263,78 +263,78 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converting Design Systems into reusable CSS and Components",
+          task: "Converting Design Systems into reusable CSS and Components"
         },
         {
           id: 1,
-          task: "Making complex layouts",
+          task: "Making complex layouts"
         },
         {
           id: 2,
-          task: "Developing and maintaining the user interfaces",
+          task: "Developing and maintaining the user interfaces"
         },
         {
           id: 3,
-          task: "Worked on Optimization, Performance and UX Improvement.",
+          task: "Worked on Optimization, Performance and UX Improvement."
         },
         {
           id: 4,
-          task: "Making Responsive UI.",
+          task: "Making Responsive UI."
         },
         {
           id: 5,
-          task: "Integrating API's and RESTful Services.",
-        },
+          task: "Integrating API's and RESTful Services."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "SCSS",
+          name: "SCSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 3,
-          name: "Ionic",
+          name: "Ionic"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Tailwindcss",
+          name: "Tailwindcss"
         },
         {
           id: 9,
-          name: "Material UI",
-        },
+          name: "Material UI"
+        }
       ],
       organization: [
         {
           id: 0,
-          name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          name: "RightBrain Infotech",
+          website: "https://www.rightbraininfotech.in/"
+        }
+      ]
     },
     {
       id: 5,
@@ -346,70 +346,70 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "PSD/ Prototype to HTML Conversion.",
+          task: "PSD/ Prototype to HTML Conversion."
         },
         {
           id: 1,
-          task: "Making Highly Interactive UI/ UX.",
+          task: "Making Highly Interactive UI/ UX."
         },
         {
           id: 2,
-          task: "Made High level and reusable UI components.",
+          task: "Made High level and reusable UI components."
         },
         {
           id: 3,
-          task: "Making responsive and browser compatible UI.",
+          task: "Making responsive and browser compatible UI."
         },
         {
           id: 4,
-          task: "Optimizing and improving performance.",
-        },
+          task: "Optimizing and improving performance."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "jQuery",
+          name: "jQuery"
         },
         {
           id: 3,
-          name: "Ajax",
+          name: "Ajax"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Bootstrap 5",
-        },
+          name: "Bootstrap 5"
+        }
       ],
       organization: [
         {
           id: 0,
-          name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          name: "Glixcel",
+          website: "https://www.facebook.com/glixcelbootcamp/"
+        }
+      ]
     },
     {
       id: 0,
@@ -421,74 +421,74 @@ export const data = {
       project_tasks: [
         {
           id: 4,
-          task: "Refactored the existing application for web.",
+          task: "Refactored the existing application for web."
         },
         {
           id: 0,
-          task: "Worked on both Mobile and Web App.",
+          task: "Worked on both Mobile and Web App."
         },
         {
           id: 1,
-          task: "Converted Design system into Web/ Mobile compatible stylings.",
+          task: "Converted Design system into Web/ Mobile compatible stylings."
         },
         {
           id: 2,
-          task: "Made Highly Interactive UI.",
+          task: "Made Highly Interactive UI."
         },
         {
           id: 3,
-          task: "Made High level and reusable components.",
-        },
+          task: "Made High level and reusable components."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 4,
-          name: "React Native",
+          name: "React Native"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "PWA",
+          name: "PWA"
         },
         {
           id: 8,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 9,
-          name: "Bootstrap",
-        },
+          name: "Bootstrap"
+        }
       ],
       organization: [
         {
           id: 0,
           name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          website: "https://www.prismxai.com/"
+        }
+      ]
     },
     {
       id: 1,
@@ -500,70 +500,70 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converted Design System into Web compatible stylings.",
+          task: "Converted Design System into Web compatible stylings."
         },
         {
           id: 1,
-          task: "Made Highly Interactive UI and UX.",
+          task: "Made Highly Interactive UI and UX."
         },
         {
           id: 2,
-          task: "Made High level and reusable UI components.",
+          task: "Made High level and reusable UI components."
         },
         {
           id: 3,
-          task: "Made the App both Mobile and Web compatible and accessible.",
-        },
+          task: "Made the App both Mobile and Web compatible and accessible."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "PWA",
+          name: "PWA"
         },
         {
           id: 9,
-          name: "Bootstrap 3",
+          name: "Bootstrap 3"
         },
         {
           id: 10,
-          name: "Bootstrap 4",
-        },
+          name: "Bootstrap 4"
+        }
       ],
       organization: [
         {
           id: 0,
           name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          website: "https://www.prismxai.com/"
+        }
+      ]
     },
     {
       id: 2,
@@ -575,62 +575,62 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converted Design System into Web compatible stylings.",
+          task: "Converted Design System into Web compatible stylings."
         },
         {
           id: 1,
-          task: "Made Highly Interactive UI and UX.",
+          task: "Made Highly Interactive UI and UX."
         },
         {
           id: 2,
-          task: "Made High level and reusable UI components.",
+          task: "Made High level and reusable UI components."
         },
         {
           id: 3,
-          task: "Made the App both Mobile and Web compatible and accessible.",
-        },
+          task: "Made the App both Mobile and Web compatible and accessible."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Bootstrap 5",
-        },
+          name: "Bootstrap 5"
+        }
       ],
       organization: [
         {
           id: 0,
           name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          website: "https://www.prismxai.com/"
+        }
+      ]
     },
     {
       id: 3,
@@ -642,74 +642,74 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converted Design System into Web compatible stylings.",
+          task: "Converted Design System into Web compatible stylings."
         },
         {
           id: 1,
-          task: "Made Highly Interactive UI and UX.",
+          task: "Made Highly Interactive UI and UX."
         },
         {
           id: 2,
-          task: "Made High level and reusable UI components.",
+          task: "Made High level and reusable UI components."
         },
         {
           id: 3,
-          task: "Made the App both Mobile and Web compatible and accessible.",
+          task: "Made the App both Mobile and Web compatible and accessible."
         },
         {
           id: 4,
-          task: "Also worked on the Mobile App made in React Native.",
-        },
+          task: "Also worked on the Mobile App made in React Native."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 3,
-          name: "React Native",
+          name: "React Native"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Bootstrap 5",
+          name: "Bootstrap 5"
         },
         {
           id: 9,
-          name: "Material UI",
-        },
+          name: "Material UI"
+        }
       ],
       organization: [
         {
           id: 0,
           name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
+          website: "https://www.prismxai.com/"
+        }
+      ]
     },
     {
       id: 4,
@@ -721,202 +721,202 @@ export const data = {
       project_tasks: [
         {
           id: 0,
-          task: "Converted Design System into Web compatible stylings.",
+          task: "Converted Design System into Web compatible stylings."
         },
         {
           id: 1,
-          task: "Made Highly Interactive UI and UX.",
+          task: "Made Highly Interactive UI and UX."
         },
         {
           id: 2,
-          task: "Made High level and reusable UI components.",
+          task: "Made High level and reusable UI components."
         },
         {
           id: 3,
-          task: "Made the App both Mobile and Web compatible and accessible.",
-        },
+          task: "Made the App both Mobile and Web compatible and accessible."
+        }
       ],
       skills_utilized: [
         {
           id: 0,
-          name: "HTML",
+          name: "HTML"
         },
         {
           id: 1,
-          name: "CSS",
+          name: "CSS"
         },
         {
           id: 2,
-          name: "JavaScript",
+          name: "JavaScript"
         },
         {
           id: 3,
-          name: "Angular",
+          name: "Angular"
         },
         {
           id: 5,
-          name: "Figma",
+          name: "Figma"
         },
         {
           id: 6,
-          name: "Responsive Design",
+          name: "Responsive Design"
         },
         {
           id: 7,
-          name: "REST",
+          name: "REST"
         },
         {
           id: 8,
-          name: "Bootstrap 4",
-        },
+          name: "Bootstrap 4"
+        }
       ],
       organization: [
         {
           id: 0,
           name: "PrismX",
-          website: "https://www.prismxai.com/",
-        },
-      ],
-    },
+          website: "https://www.prismxai.com/"
+        }
+      ]
+    }
   ],
   skills: [
     {
       id: 0,
       name: "HTML",
-      icon: "",
+      icon: ""
     },
     {
       id: 1,
       name: "CSS",
-      icon: "",
+      icon: ""
     },
     {
       id: 28,
       name: "SCSS",
-      icon: "",
+      icon: ""
     },
     {
       id: 2,
       name: "JavaScript",
-      icon: "",
+      icon: ""
     },
     {
       id: 3,
       name: "React",
-      icon: "",
+      icon: ""
     },
     {
       id: 4,
       name: "Angular",
-      icon: "",
+      icon: ""
     },
     {
       id: 5,
       name: "Next.js",
-      icon: "",
+      icon: ""
     },
     {
       id: 6,
       name: "React Native",
-      icon: "",
+      icon: ""
     },
     {
       id: 7,
       name: "Ionic",
-      icon: "",
+      icon: ""
     },
     {
       id: 29,
       name: "Capacitor.js",
-      icon: "",
+      icon: ""
     },
     {
       id: 8,
       name: "Firebase",
-      icon: "",
+      icon: ""
     },
     {
       id: 9,
       name: "Typescript",
-      icon: "",
+      icon: ""
     },
     {
       id: 10,
       name: "REST API",
-      icon: "",
+      icon: ""
     },
     {
       id: 11,
       name: "Wordpress",
-      icon: "",
+      icon: ""
     },
     {
       id: 12,
       name: "Bootstrap",
-      icon: "",
+      icon: ""
     },
     {
       id: 13,
       name: "Material UI",
-      icon: "",
+      icon: ""
     },
     {
       id: 14,
       name: "Figma",
-      icon: "",
+      icon: ""
     },
     {
       id: 15,
       name: "TailwindCSS",
-      icon: "",
+      icon: ""
     },
     {
       id: 16,
       name: "Supabase",
-      icon: "",
+      icon: ""
     },
     {
       id: 17,
       name: "jQuery",
-      icon: "",
-    },
+      icon: ""
+    }
   ],
   services: [
     {
       id: 0,
       name: "Web Design",
       icon: "fas fa-pencil-paintbrush",
-      desc: "I use an amazing tool known as Figma using which my Clients can get an overview of how the actual website will look like & how it will Interact with the user.",
+      desc: "I use an amazing tool known as Figma using which my Clients can get an overview of how the actual website will look like & how it will Interact with the user."
     },
     {
       id: 1,
       name: "Prototype/ PSD to HTML",
       icon: "fab fa-html5",
-      desc: "I can even convert a Prototype or a PSD into HTML document. Also make it responsive using a best technology known as SASS. Design will be as same as Prototype or PSD.",
+      desc: "I can even convert a Prototype or a PSD into HTML document. Also make it responsive using a best technology known as SASS. Design will be as same as Prototype or PSD."
     },
     {
       id: 2,
       name: "Clean & Valid Code",
       icon: "fas fa-laptop-code",
-      desc: "Code written will be 100% Clean & Valid, It can be understood by other developers if required. I always keep two things in mind and that are Reusability & Maintainability.",
+      desc: "Code written will be 100% Clean & Valid, It can be understood by other developers if required. I always keep two things in mind and that are Reusability & Maintainability."
     },
     {
       id: 3,
       name: "Easy to Customize",
       icon: "fas fa-cogs",
-      desc: "I develope websites in such a way that they can be customized according to the clients requirements. Also make it easier if new feature is to be added.",
+      desc: "I develope websites in such a way that they can be customized according to the clients requirements. Also make it easier if new feature is to be added."
     },
     {
       id: 4,
       name: "Multi-Device Website",
       icon: "fas fa-phone-laptop",
-      desc: "Websites that I design are 100% Responsive & can adjust themselves according to the Viewport size. i.e, They can run on Mobiles, Tablets, Desktops, Laptops, etc.",
+      desc: "Websites that I design are 100% Responsive & can adjust themselves according to the Viewport size. i.e, They can run on Mobiles, Tablets, Desktops, Laptops, etc."
     },
     {
       id: 5,
       name: "Version Control",
       icon: "fab fa-github",
-      desc: "To keep my website fresh & updated i use GitHub's Version Control. Using this powerful Tool It's possible to control the version of my project and update it accordingly.",
-    },
-  ],
+      desc: "To keep my website fresh & updated i use GitHub's Version Control. Using this powerful Tool It's possible to control the version of my project and update it accordingly."
+    }
+  ]
 };
