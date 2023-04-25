@@ -18,5 +18,7 @@ export default function handler(
     personal_projects: 16
   };
 
-  res.status(200).json(payload);
+  setTimeout(() => {
+    res.status(200).json(payload);
+  }, 2000);
 }

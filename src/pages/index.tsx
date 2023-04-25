@@ -81,7 +81,6 @@ export default function Home() {
       <Services services={services} />
       <Contact />
       <Footer />
-      {loading && <Loader />}
       <div
         className="fixed bottom-[30px] right-[15px]"
         ref={scrollToTopRef}
