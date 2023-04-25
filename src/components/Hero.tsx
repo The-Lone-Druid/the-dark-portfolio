@@ -13,7 +13,7 @@ const Hero = ({ data }: Props) => {
   return (
     <div className="pf-container py-[60px] pb-[120px]" id="home">
       <div className="flex lg:flex-row flex-col-reverse justify-between items-center">
-        <div>
+        <div className="w-full">
           {data ? (
             <>
               <Typography variant="h5" fontWeight="bold" gutterBottom>
@@ -116,7 +116,7 @@ const Hero = ({ data }: Props) => {
         <div className="flex items-center justify-end mb-5 lg:mb-0">
           <Image
             src={Illustration}
-            width={380}
+            className="md:w-[500px] w-[380px]"
             style={{ objectFit: "cover" }}
             alt={""}
           />
