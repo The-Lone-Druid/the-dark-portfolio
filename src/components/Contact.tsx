@@ -33,7 +33,7 @@ const ContactFormSchema = Yup.object().shape({
   message: Yup.string().required("Message is required.")
 });
 
-const Contact = (props: Props) => {
+const Contact = () => {
   const [open, setOpen] = React.useState(false);
   const [message, setMessage] = React.useState("");
   const [responseType, setResponseType] = React.useState<AlertColor>("success");
@@ -75,7 +75,7 @@ const Contact = (props: Props) => {
             handleClick();
           }
         })
-        .catch((err) => {
+        .catch(() => {
           setResponseType("error");
           setMessage("Oops! Something went wrong, please try again later.");
           handleClick();

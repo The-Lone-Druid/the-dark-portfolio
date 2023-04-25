@@ -1,9 +1,8 @@
 import { Typography } from "@mui/material";
-import React from "react";
 
 type Props = {};
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <div className="bg-pf-dark-med">
       <div className="pf-container py-[60px]">

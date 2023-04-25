@@ -6,7 +6,7 @@ import {
   Link,
   VisibilityOutlined
 } from "@mui/icons-material";
-import { Button, Chip, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 

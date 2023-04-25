@@ -9,10 +9,7 @@ export type Services = {
   desc: string;
 };
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Services[]>
-) {
+export default function handler(res: NextApiResponse<Services[]>) {
   const services = data.services;
   res.status(200).json(services);
 }

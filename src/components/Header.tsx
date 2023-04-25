@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
 
 type Props = {};
@@ -21,7 +20,7 @@ type Menu = {
   link: string;
 };
 
-const Header = (props: Props) => {
+const Header = () => {
   const [menu, setMenu] = React.useState<Menu[]>();
   const [isMenuVisible, setIsMenuVisible] = React.useState(false);
 

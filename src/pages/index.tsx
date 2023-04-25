@@ -2,7 +2,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Loader from "@/components/Loader";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
@@ -19,7 +18,7 @@ export default function Home() {
   const [projects, setProjects] = React.useState<ProjectsType[]>([]);
   const [skills, setSkills] = React.useState<SkillsType[]>([]);
   const [services, setServices] = React.useState<ServiceType[]>([]);
-  const [loading, setLoading] = React.useState(true);
+  const [, setLoading] = React.useState(true);
   const scrollToTopRef = React.useRef<any>();
 
   const fetchHeroDataAsync = async () => {

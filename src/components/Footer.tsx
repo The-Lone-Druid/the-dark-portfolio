@@ -1,8 +1,6 @@
-import React from "react";
-
 type Props = {};
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
     <div className="h-[80px] flex items-center">
       <div className="pf-container">

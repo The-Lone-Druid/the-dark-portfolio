@@ -8,10 +8,7 @@ export type Skills = {
   icon: string;
 };
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Skills[]>
-) {
+export default function handler(res: NextApiResponse<Skills[]>) {
   const skills = data.skills;
   res.status(200).json(skills);
 }

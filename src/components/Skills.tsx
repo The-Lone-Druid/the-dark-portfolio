@@ -1,6 +1,5 @@
 import { Skills } from "@/pages/api/skills";
 import { Typography } from "@mui/material";
-import React from "react";
 
 type Props = {
   skills: Skills[];

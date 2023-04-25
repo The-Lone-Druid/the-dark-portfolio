@@ -1,6 +1,5 @@
 import { Projects } from "@/pages/api/projects";
 import { Typography } from "@mui/material";
-import React from "react";
 import Project from "./Project";
 
 type Props = {

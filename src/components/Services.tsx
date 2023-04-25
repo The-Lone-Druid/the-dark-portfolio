@@ -1,6 +1,5 @@
 import { Services } from "@/pages/api/services";
 import { Typography } from "@mui/material";
-import React from "react";
 
 type Props = {
   services: Services[];
