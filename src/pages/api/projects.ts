@@ -22,7 +22,10 @@ export type Projects = {
   }[];
 };
 
-export default function handler(res: NextApiResponse<Projects[]>) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Projects[]>
+) {
   const projects = data.projects;
   res.status(200).json(projects);
 }

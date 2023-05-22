@@ -8,7 +8,10 @@ export type Hero = {
   personal_projects: number;
 };
 
-export default function handler(res: NextApiResponse<Hero>) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Hero>
+) {
   const payload = {
     verified_skills: data.skills.length,
     professional_projects: data.projects.length,
