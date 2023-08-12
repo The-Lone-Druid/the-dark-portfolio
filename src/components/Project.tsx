@@ -15,7 +15,7 @@ type Props = {
 };
 
 const Project = ({ data }: Props) => {
-  const [expand, setExpand] = React.useState(false);
+  const [expand, setExpand] = React.useState(true);
 
   const handleExpandMore = () => {
     setExpand(!expand);
